@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+</head>
+<body>
+    <h1>Task Manager</h1>
+    <form id="add-task-form">
+        <input type="text" id="task-description" name="description" placeholder="Enter task description">
+        <button type="submit">Add Task</button>
+    </form>
+    <ul id="task-list">
+        {% for task in tasks %}
+            <li>{{ task.description }} {% if task.done %}(Done){% endif %} <button class="delete-btn" data-task-id="{{ task.id }}">Delete</button> <button class="mark-done-btn" data-task-id="{{ task.id }}">Mark Done</button></li>
+        {% endfor %}
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#add-task-form').submit(function(event) {
+                event.preventDefault();
+                var formData = $(this).serialize();
+                $.ajax({
+                    type: 'POST',
+                    url: '/add_task',
+                    data: formData,
+                    success: function(response) {
+                        alert(response.message);
+                        location.reload();
+                    },
+                    error: function(error) {
+                        console.log(error);
+                    }
+                });
+            });
+
+            $('.delete-btn').click(function() {
+                var taskId = $(this).data('task-id');
+                $.ajax({
+                    type: 'DELETE',
+                    url: '/delete_task/' + taskId,
+                    success: function(response) {
+                        alert(response.message);
+                        location.reload();
+                    },
+                    error: function(error) {
+                        console.log(error);
+                    }
+                });
+            });
+
+            $('.mark-done-btn').click(function() {
+                var taskId = $(this).data('task-id');
+                $.ajax({
+                    type: 'PUT',
+                    url: '/mark_task_done/' + taskId,
+                    success: function(response) {
+                        alert(response.message);
+                        location.reload();
+                    },
+                    error: function(error) {
+                        console.log(error);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
