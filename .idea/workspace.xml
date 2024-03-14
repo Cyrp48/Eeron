@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a76b694-e085-413c-8b45-6825815d3118" name="Changes" comment="ver2">
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/setup.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2d7c1c82-9741-49cf-ab7b-b0bd0e4043b5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2d7c1c82-9741-49cf-ab7b-b0bd0e4043b5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eeron.egg-info/PKG-INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eeron.egg-info/SOURCES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eeron.egg-info/dependency_links.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eeron.egg-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/database.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Eeron-1.0.0-py3-none-any.whl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Eeron-1.0.0.tar.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.cfg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -141,7 +148,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710434458208</updated>
       <workItem from="1710434495863" duration="7766000" />
-      <workItem from="1710442485448" duration="1436000" />
+      <workItem from="1710442485448" duration="2456000" />
     </task>
     <task id="LOCAL-00001" summary="ver2">
       <option name="closed" value="true" />
@@ -151,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710442330204</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ver2">
+      <option name="closed" value="true" />
+      <created>1710444163172</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1710444163173</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
