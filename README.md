@@ -1,6 +1,6 @@
 New org style for opps
 
-**Instalation**
+**Installation**
 ```
 pip install Eeron
 ```
